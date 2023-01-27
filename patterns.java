@@ -12,6 +12,10 @@ public class patterns{
             System.out.println("5.patter5");
             System.out.println("6.patter6");
             System.out.println("7.patter7");
+            System.out.println("8.patter8");
+            System.out.println("9.patter9");
+            System.out.println("91.patter91");
+            System.out.println("10.patter10");
             System.out.println("23.exit");
 
             c=sc.nextInt();
@@ -50,6 +54,26 @@ public class patterns{
                     System.out.print("Enter the Value:");
                     int p6=sc.nextInt();
                     pattern7(p6);
+                    break;
+                case 8:
+                    System.out.print("Enter the Value:");
+                    int p7=sc.nextInt();
+                    pattern8(p7);
+                    break;
+                case 9:
+                    System.out.print("Enter the Value:");
+                    int p8=sc.nextInt();
+                    pattern9(p8);
+                    break;
+                case 91:
+                    System.out.print("Enter the Value:");
+                    int p9=sc.nextInt();
+                    printDiamond(p9);
+                    break; 
+                case 10:
+                    System.out.print("Enter the Value:");
+                    int p10=sc.nextInt();
+                    pattern10(p10);
                     break;
                 case 23:
                     sc.close();
@@ -121,7 +145,6 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-
     public static void pattern7(int n){
         System.out.println("\n\npattern 7 ");
         for(int i=0;i<n;i++){
@@ -138,4 +161,76 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
+    public static void pattern8(int n) {
+        System.out.println("\n\npattern 8 ");
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(" ");
+            }
+            for (int j = 0; j<=(((n*2)-2)-i*2); j++) {
+                System.out.print("*");    
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n\n");
+    }
+    public static void pattern9(int n) {
+        System.out.println("\n\npattern 9 ");
+        for(int i=0;i<n;i++){
+            for(int j=0;j<(n-i-1);j++){
+                System.out.print(" ");
+            }
+            for(int k=0;k<((2*i)+1);k++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        for(int i=0;i<n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(" ");
+            }
+            for (int j = 0; j<=(((n*2)-2)-i*2); j++) {
+                System.out.print("*");    
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n\n");
+    }
+    public static void printDiamond(int n) {
+        for(int i=0;i<n;i++){
+            for(int j=0;j<(n-i-1);j++){
+                System.out.print(" ");
+            }
+            for(int k=0;k<=i;k++){
+                System.out.print("* ");
+            }
+            System.out.print("\n");
+        }
+        for(int i=0;i<n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(" ");
+            }
+            for (int j = 0; j<n-i; j++) {
+                System.out.print("* ");    
+            }
+            System.out.print("\n");
+        }
+    }
+    public static void pattern10(int n) {
+        System.out.println("\n\npattern 10 ");        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <=i; j++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j <(n-1)-i; j++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+    
 }
