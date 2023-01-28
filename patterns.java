@@ -1,26 +1,27 @@
 import java.util.*;
 
-public class patterns{
+public class patternns{
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         int c;
         loop : while(true){
-            System.out.println("Patters");
-            System.out.println("1.patter1");
-            System.out.println("2.patter2");
-            System.out.println("3.patter3");
-            System.out.println("4.patter4");
-            System.out.println("5.patter5");
-            System.out.println("6.patter6");
-            System.out.println("7.patter7");
-            System.out.println("8.patter8");
-            System.out.println("9.patter9");
-            System.out.println("91.patter91");
-            System.out.println("10.patter10");
-            System.out.println("11.patter11");
-            System.out.println("12.patter12");
-            System.out.println("13.patter13");
-            System.out.println("14.patter14");
+            System.out.println("patterns");
+            System.out.println("1.pattern1");
+            System.out.println("2.pattern2");
+            System.out.println("3.pattern3");
+            System.out.println("4.pattern4");
+            System.out.println("5.pattern5");
+            System.out.println("6.pattern6");
+            System.out.println("7.pattern7");
+            System.out.println("8.pattern8");
+            System.out.println("9.pattern9");
+            System.out.println("91.pattern91");
+            System.out.println("10.pattern10");
+            System.out.println("11.pattern11");
+            System.out.println("12.pattern12");
+            System.out.println("13.pattern13");
+            System.out.println("14.pattern14");
+            System.out.println("15.pattern15");
             System.out.println("23.exit");
 
             c=sc.nextInt();
@@ -28,47 +29,47 @@ public class patterns{
                 case 1:
                     System.out.print("Enter the Value:");
                     int p=sc.nextInt();
-                    pattern1(p);
+                    patternn1(p);
                     break;
                 case 2:
                     System.out.print("Enter the Value:");
                     int p1=sc.nextInt();
-                    pattern2(p1);
+                    patternn2(p1);
                     break;
                 case 3:
                     System.out.print("Enter the Value:");
                     int p2=sc.nextInt();
-                    pattern3(p2);
+                    patternn3(p2);
                     break;
                 case 4:
                     System.out.print("Enter the Value:");
                     int p3=sc.nextInt();
-                    pattern4(p3);
+                    patternn4(p3);
                     break;
                 case 5:
                     System.out.print("Enter the Value:");
                     int p4=sc.nextInt();
-                    pattern5(p4);
+                    patternn5(p4);
                     break;
                 case 6:
                     System.out.print("Enter the Value:");
                     int p5=sc.nextInt();
-                    pattern6(p5);
+                    patternn6(p5);
                     break;        
                 case 7:
                     System.out.print("Enter the Value:");
                     int p6=sc.nextInt();
-                    pattern7(p6);
+                    patternn7(p6);
                     break;
                 case 8:
                     System.out.print("Enter the Value:");
                     int p7=sc.nextInt();
-                    pattern8(p7);
+                    patternn8(p7);
                     break;
                 case 9:
                     System.out.print("Enter the Value:");
                     int p8=sc.nextInt();
-                    pattern9(p8);
+                    patternn9(p8);
                     break;
                 case 91:
                     System.out.print("Enter the Value:");
@@ -78,27 +79,32 @@ public class patterns{
                 case 10:
                     System.out.print("Enter the Value:");
                     int p10=sc.nextInt();
-                    pattern10(p10);
+                    patternn10(p10);
                     break;
                 case 11:
                     System.out.print("Enter the Value:");
                     int p11=sc.nextInt();
-                    pattern11(p11);
+                    patternn11(p11);
                     break;
                 case 12:
                     System.out.print("Enter the Value:");
                     int p12=sc.nextInt();
-                    pattern12(p12);
+                    patternn12(p12);
                     break;
                 case 13:
                     System.out.print("Enter the Value:");
                     int p13=sc.nextInt();
-                    pattern13(p13);
+                    patternn13(p13);
                     break;
                 case 14:
                     System.out.print("Enter the Value:");
                     int p14=sc.nextInt();
-                    pattern14(p14);
+                    patternn14(p14);
+                    break;
+                case 15:
+                    System.out.print("Enter the Value:");
+                    int p15=sc.nextInt();
+                    patternn15(p15);
                     break;
                 case 23:
                     sc.close();
@@ -110,8 +116,8 @@ public class patterns{
         
     }
 
-    public static void pattern1(int n){
-        System.out.println("\n\npattern 1 ");
+    public static void patternn1(int n){
+        System.out.println("\n\npatternn 1 ");
         for(int i=0; i<n ;i++){
             for(int j=0; j<n ;j++){
                 System.out.print("* ");
@@ -120,8 +126,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern2(int n){
-        System.out.println("\n\npattern 2 ");
+    public static void patternn2(int n){
+        System.out.println("\n\npatternn 2 ");
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
                 System.out.print("* ");
@@ -130,8 +136,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern3(int n){
-        System.out.println("\n\npattern 3 ");
+    public static void patternn3(int n){
+        System.out.println("\n\npatternn 3 ");
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
                 System.out.print(j+1+" ");
@@ -140,8 +146,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern4(int n){
-        System.out.println("\n\npattern 4 ");
+    public static void patternn4(int n){
+        System.out.println("\n\npatternn 4 ");
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
                 System.out.print(i+1);
@@ -150,8 +156,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern5(int n){
-        System.out.println("\n\npattern 5 ");
+    public static void patternn5(int n){
+        System.out.println("\n\npatternn 5 ");
         for(int i=0;i<n;i++){
             for(int j=0;j<(n-i);j++){
                 System.out.print("*");
@@ -160,8 +166,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern6(int n){
-        System.out.println("\n\npattern 6 ");
+    public static void patternn6(int n){
+        System.out.println("\n\npatternn 6 ");
         for(int i=0;i<n;i++){
             for(int j=0;j<(n-i);j++){
                 System.out.print(j+1+" ");
@@ -170,8 +176,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern7(int n){
-        System.out.println("\n\npattern 7 ");
+    public static void patternn7(int n){
+        System.out.println("\n\npatternn 7 ");
         for(int i=0;i<n;i++){
             for(int j=0;j<(n-i-1);j++){
                 System.out.print(" ");
@@ -186,8 +192,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern8(int n) {
-        System.out.println("\n\npattern 8 ");
+    public static void patternn8(int n) {
+        System.out.println("\n\npatternn 8 ");
 
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
@@ -200,8 +206,8 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern9(int n) {
-        System.out.println("\n\npattern 9 ");
+    public static void patternn9(int n) {
+        System.out.println("\n\npatternn 9 ");
         for(int i=0;i<n;i++){
             for(int j=0;j<(n-i-1);j++){
                 System.out.print(" ");
@@ -242,8 +248,8 @@ public class patterns{
             System.out.print("\n");
         }
     }
-    public static void pattern10(int n) {
-        System.out.println("\n\npattern 10 ");        
+    public static void patternn10(int n) {
+        System.out.println("\n\npatternn 10 ");        
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <=i; j++) {
                 System.out.print("*");
@@ -257,8 +263,8 @@ public class patterns{
             System.out.print("\n");
         }
     }
-    public static void pattern11(int n) {
-        System.out.println("pattern 11:");
+    public static void patternn11(int n) {
+        System.out.println("patternn 11:");
         int s=0;
         for(int i=0;i<n;i++){
             if(i%2==0){
@@ -274,7 +280,7 @@ public class patterns{
         }
         System.out.print("\n\n");
     }
-    public static void pattern12(int n) {
+    public static void patternn12(int n) {
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
                 System.out.print(j+1+" ");
@@ -288,7 +294,7 @@ public class patterns{
             System.out.print("\n");
         }
     }
-    public static void pattern13(int n) {
+    public static void patternn13(int n) {
         int c=1;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <=i; j++) {
@@ -298,7 +304,7 @@ public class patterns{
             System.out.println("");
         }
     }
-    public static void pattern14(int n) {
+    public static void patternn14(int n) {
         int c;
         for (int i = 0; i < n; i++) {
             c=65;
@@ -309,6 +315,18 @@ public class patterns{
             System.out.println("");
         }
         
+    }
+    public static void patternn15(int n) {
+        int c;
+        for (int i = 0; i < n; i++) {
+            c=65;
+            for(int j=0;j<(n-i);j++){
+                System.out.print((char)c);
+                c++;
+            }
+            System.out.println("");
+            
+        }
     }
     }
 
