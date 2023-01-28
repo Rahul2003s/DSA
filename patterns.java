@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class patterns{
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
@@ -16,6 +17,8 @@ public class patterns{
             System.out.println("9.patter9");
             System.out.println("91.patter91");
             System.out.println("10.patter10");
+            System.out.println("11.patter11");
+            System.out.println("12.patter12");
             System.out.println("23.exit");
 
             c=sc.nextInt();
@@ -74,6 +77,11 @@ public class patterns{
                     System.out.print("Enter the Value:");
                     int p10=sc.nextInt();
                     pattern10(p10);
+                    break;
+                case 11:
+                    System.out.print("Enter the Value:");
+                    int p11=sc.nextInt();
+                    pattern11(p11);
                     break;
                 case 23:
                     sc.close();
@@ -232,5 +240,30 @@ public class patterns{
             System.out.print("\n");
         }
     }
-    
+    public static void pattern11(int n) {
+        System.out.println("pattern 11:");
+        int s=0;
+        for(int i=0;i<n;i++){
+            if(i%2==0){
+                s=1;
+            }else{
+                s=0;   
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print(s+" ");
+                s=1-s;
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n\n");
+    }
+    public static void patter12(int n) {
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(j+1+" ");
+            }
+            System.out.print("\n");
+        }
+        
+    }
 }
