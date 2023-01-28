@@ -19,6 +19,8 @@ public class patterns{
             System.out.println("10.patter10");
             System.out.println("11.patter11");
             System.out.println("12.patter12");
+            System.out.println("13.patter13");
+            System.out.println("14.patter14");
             System.out.println("23.exit");
 
             c=sc.nextInt();
@@ -87,6 +89,16 @@ public class patterns{
                     System.out.print("Enter the Value:");
                     int p12=sc.nextInt();
                     pattern12(p12);
+                    break;
+                case 13:
+                    System.out.print("Enter the Value:");
+                    int p13=sc.nextInt();
+                    pattern13(p13);
+                    break;
+                case 14:
+                    System.out.print("Enter the Value:");
+                    int p14=sc.nextInt();
+                    pattern14(p14);
                     break;
                 case 23:
                     sc.close();
@@ -276,6 +288,27 @@ public class patterns{
             System.out.print("\n");
         }
     }
+    public static void pattern13(int n) {
+        int c=1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <=i; j++) {
+                System.out.print(c+" ");
+                c++;
+            }
+            System.out.println("");
+        }
+    }
+    public static void pattern14(int n) {
+        int c;
+        for (int i = 0; i < n; i++) {
+            c=65;
+            for (int j = 0; j <=i; j++) {
+                System.out.print((char)c);
+                c++;
+            }
+            System.out.println("");
+        }
         
+    }
     }
 
