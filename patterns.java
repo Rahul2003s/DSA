@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class patternns{
+public class patterns{
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         int c;
@@ -22,6 +22,7 @@ public class patternns{
             System.out.println("13.pattern13");
             System.out.println("14.pattern14");
             System.out.println("15.pattern15");
+            System.out.println("16.pattern16");
             System.out.println("23.exit");
 
             c=sc.nextInt();
@@ -106,7 +107,12 @@ public class patternns{
                     int p15=sc.nextInt();
                     patternn15(p15);
                     break;
-                case 23:
+                case 16:
+                    System.out.print("Enter the Value:");
+                    int p16=sc.nextInt();
+                    pattern16(p16);
+                    break;
+               case 23:
                     sc.close();
                     break loop;
                 default:
@@ -327,6 +333,17 @@ public class patternns{
             System.out.println("");
             
         }
+    }
+    public static void pattern16(int n) {
+        int c=65;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <=i; j++) {
+                System.out.print((char)c);
+            }
+            c++;
+            System.out.println("");
+        }
+        
     }
     }
 
