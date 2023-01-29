@@ -24,6 +24,8 @@ public class patterns{
             System.out.println("15.pattern15");
             System.out.println("16.pattern16");
             System.out.println("17.pattern17");
+            System.out.println("18.pattern18");
+            System.out.println("19.pattern19");
             System.out.println("23.exit");
 
             c=sc.nextInt();
@@ -371,5 +373,13 @@ public class patterns{
             }
             System.out.println("");
         }        
+    }
+    public static void pattern18(int n) {
+        for (int i = 0; i <=n; i++) {
+            for (int j = 0; j <i; j++) {
+                System.out.print(".");
+            }
+        }
+        
     }
 }
